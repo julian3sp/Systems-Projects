@@ -1,0 +1,52 @@
+Pseudocode for each function:
+
+
+int update_hare(int current_position) + other update statements:
+
+- first generate a random float using: float val =  rand() / RAND_MAX;
+as shown in class
+- now check every possible outcome for the random float, each situation resulting in a different movement
+if ((0 <= val) and  (val < 0.45))
+
+   add 3 to the current position
+   
+    else if ((0.45 <= val) and (val < 0.65))
+
+    subtract 5 from the current position
+
+    else if ((0.65 <= val) and (val < 1))
+
+    add 1 to the current position
+
+- check if the current position is less than 0, if so, reset the current position to zero
+- do the same for the other two animals, changing the percentages when needed
+
+
+race.c-
+int main(void):
+Prompt user for seed value 
+Get value from terminal and store in variable (Seed)
+Initialize variables
+
+- start while loop that ends when one of the animals reaches 70
+ (harePosition < 70) && (tortPosition < 70) && (beePosition < 70)
+
+ update each animals position using their update functions, hare then tortoise then bee
+
+ make a chain of if() and if else() statements to find which animal is currently in the lead
+
+ once the leader is found print the animal has taken the lead and indicate qhat square it is at:
+ - only print this statement if it is the correct winner and the boolean value indicating it is already in the lead is false
+ 
+ ex:    if((hareInFirst != true) and (winner == 1))
+    "print At t = 1, the hare (square 2) has taken the lead. to the terminal"
+ do this for the other two animals aswell
+
+ Once one of their positions is above 70 and the while loop is exited, check which integer is the winner, then print the winner
+  
+ ex:  if (winner == 1)
+        print "After 39 seconds, the hare wins!!" to the terminal
+    
+
+ 
+

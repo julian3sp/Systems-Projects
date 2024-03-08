@@ -1,0 +1,45 @@
+Main:
+// declare variables, including the number of rows in the array, columns in the array and the array itself
+// make an array of strings to store the names of each month
+// first iterate over the files using a for loop with i being less than columns (same as number of months)
+// Open the i'th file
+// Error checking: after you open the file check if it is equal to 'NULL', 
+//  if it is, return an error statement and exit the program
+// Now, we can iterate over the rows for whichever column we are currently on, scan each rows info until we reach the last column
+// then we close the file we are working on, this is repeated until the last column/month is reached and read
+// once we are done with reading the files, prompt the user for which program theyd like to run and scan their input
+// use if/if else statements to run a different function upon the data depending on the users input
+
+
+
+print_item:
+// Header Row: Print the header row with month names separated by tabs using "\t"
+// Data Printing Loop: For each element in the row (from January to December):
+// 1. Print the corresponding data value from the provided two-dimensional array (data) for the specified row (rows) and column (i).
+// 2. Check if the current element is not the last one in the row (i < cols - 1):
+// If true, print a tab character ("\t") to separate the current element from the next one.
+// If false (i.e., it's the last element in the row), print a newline character ("\n") to move to the next line.
+
+
+total_sales:
+// Open a new file named "sales.txt" for writing.
+// header line to the file with column names: "Item" and "Sales".
+// 1. Initialize a variable current_row_sales to 0 to keep track of the total sales for the current row.
+// 2. For each element in the row:
+// Add the value of the current element to current_row_sales.
+// 3. Check if the row index is less than 10:
+// If true, write the row index with a leading zero, followed by the total sales, to the file.
+// If false, write the row index and the total sales to the file.
+// d. Reset current_row_sales to 0 for the next row.
+// Close File: Close the file when all data is written.
+
+
+top_overall:
+// Initialize Variables: Set previous_best and current_best to 0, and winner to 0.
+// Loop for each row of data:
+// a. Initialize current_best to 0 for the current row.
+// b. For each element in the row, add its value to current_best.
+// Check for Winner: Compare the current_best with the previous_best to determine if the current row has a higher total.
+// a. If true, update the winner to the current row index, and update previous_best to the new total.
+// Print Result: Print the result indicating the most popular item based on the row with the highest total.
+
